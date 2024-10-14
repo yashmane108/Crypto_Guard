@@ -18,4 +18,4 @@ A secure platform that allows users to upload images, decrypt files, and generat
 1. Fork the repository
 2. Clone your forked repository
    ```bash
-   git clone https://github.com/yashmane108/crypto-guard-file-decryptor.git
+   git clone https://github.com/yashmane108/Crypto_Guard.git
