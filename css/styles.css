@@ -1,1 +1,50 @@
+body {
+    background: linear-gradient(360deg,#be22ff 20%,#ff279c 50%,#ff981f);
+    background-size: cover;
+    color: rgb(0, 0, 0); /* Change text color for visibility */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.section {
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect */
+    padding: 20px;
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.upload-section, .decryption-section {
+    margin-bottom: 20px;
+}
+
+.file-input, .input-field, .btn {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.key-display {
+    font-weight: bold;
+    color: #28a745;
+}
 
