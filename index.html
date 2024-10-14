@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Guard</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Crypto Guard</h1>
+        <div class="upload-section">
+            <input type="file" id="fileInput" class="file-input">
+            <button id="uploadBtn" class="btn">Encrypt</button>
+        </div>
+
+        <div class="decryption-section">
+            <input type="text" id="decryptionKeyInput" placeholder="Enter Decryption Key" class="input-field">
+            <button id="decryptBtn" class="btn">Decrypt</button>
+        </div>
+
+        <div>
+            <input type="file" id="fileInput1" />
+            <button id="uploadBtn1" class="btn">Upload</button>
+        </div>
+
+        <div id="linkSection" style="display: none;">
+            <a id="fileLink" href="#" target="_blank">Your Link</a>
+        </div>
+        
+        <p id="decryptionKey" class="key-display"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
