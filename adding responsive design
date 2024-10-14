@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Guard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        .upload-section, .decryption-section {
+            margin-bottom: 15px;
+        }
+
+        .input-field, .file-input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        #linkSection {
+            display: none;
+            margin-top: 10px;
+        }
+
+        #fileLink {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        #fileLink:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .btn {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Crypto Guard</h1>
+
+        <div class="upload-section">
+            <input type="file" id="fileInput" class="file-input" accept=".txt,.json,.xml">
+            <button id="uploadBtn" class="btn">Encrypt</button>
+        </div>
+
+        <div class="decryption-section">
+            <input type="text" id="decryptionKeyInput" placeholder="Enter Decryption Key" class="input-field">
+            <button id="decryptBtn" class="btn">Decrypt</button>
+        </div>
+
+        <div class="upload-section">
+            <input type="file" id="fileInput1" class="file-input" accept=".txt,.json,.xml">
+            <button id="uploadBtn1" class="btn">Upload</button>
+        </div>
+
+        <div id="linkSection">
+            <a id="fileLink" href="#" target="_blank">Your Link</a>
+        </div>
+        
+        <p id="decryptionKey" class="key-display"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
