@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Guard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>Crypto Guard</h1>
+            <ul>
+                <li><a href="#">Upload</a></li>
+                <li><a href="#">Decrypt</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <h2>Upload and Encrypt Image</h2>
+            <div class="upload-area">
+                <input type="file" id="fileInput" hidden />
+                <div id="dragDrop" class="drag-drop">
+                    Drag & Drop to Upload or <span>Browse</span>
+                </div>
+                <button id="encryptBtn">Encrypt and Upload</button>
+            </div>
+            
+            <h2>Decrypted Files</h2>
+            <div id="decryptedLinks" class="decrypted-links"></div>
+        </main>
+    </div>
 
+    <script src="scripts.js"></script>
+</body>
+</html>
